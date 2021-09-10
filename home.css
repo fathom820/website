@@ -109,7 +109,7 @@ button:active {
 	
 	display: block;
 	position: relative;
-	width: 80%;
+	width: 90%;
 	background-color: #131416 ;
 	justify-content: center;
 
@@ -185,18 +185,57 @@ button:active {
 
 #profileContainer {
 	display: block;
+	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
 	width: fit-content;
-	height: auto;
+	height: fit-content;
 }
 
 .profileButtons {
-	margin: 30px;
-	
+	display: inline;
+	float: right;
 	vertical-align: middle;
+	margin-top:auto;
+	margin-bottom:auto;
 }
+
+#portrait {
+	display: inline;
+	float: left;
+	border-radius: 200px;
+	border: solid #464c50 5px;
+	margin: 30px;
+}
+
+@media all and (max-width:800px) 
+{
+	#profileContainer {
+		width: 100%;
+	}
+   .profileButtons
+    {
+        display: block; 
+        float: none; 
+        width:100%;
+    }
+	.standardButton {
+		padding: 16px 12px;
+		width: 50%;
+	}
+	.buttonText {
+		margin-left: none;
+	}
+	#portrait {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
 
 .standardButton {
 	background-color: #2d2f31;
@@ -215,13 +254,6 @@ button:active {
 	border-radius: 20px;
 }
 
-
-
-#portrait {
-	border-radius: 200px;
-	border: solid #464c50 5px;
-	margin: none;
-}
 
 .menuButton {
 	width: 8%;
