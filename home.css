@@ -181,6 +181,10 @@ button:active {
 	margin: none;
 }
 
+.menuIcon {
+	visibility: hidden !important;
+}
+
 #contentContainer {
 	padding: 30px;
 	margin: none;
@@ -212,6 +216,22 @@ button:active {
 	margin: 30px;
 }
 
+@media all and (max-width:1000px) 
+{
+	.menuButton {
+		display: none;
+	}
+	.menuIcon {
+		display: flex;
+	}
+
+	/*
+	TEMPORARY UNTIL FIX MENU ICON WORKS
+	*/
+	#menuContainer {
+		display: none;
+	}
+}
 @media all and (max-width:800px) 
 {
 	#profileContainer {
@@ -237,6 +257,14 @@ button:active {
 		margin-right: auto;
 	}
 	
+	
+	
+}
+
+@media all and (max-width:452px) {
+	h2 {
+		font-size: 14pt;
+	}
 }
 
 
@@ -261,5 +289,5 @@ button:active {
 .menuButton {
 	width: 8%;
 	border-bottom: 3px solid transparent;
-	padding-top: 12px;
+	padding-top: 1px;
 }
