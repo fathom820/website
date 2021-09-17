@@ -33,9 +33,7 @@ h1, h2 {
 h1 {
 	font-size: 48pt;
 	color: #1586d1;
-	
 }
-
 
 h2 {
 	font-size: 18pt;
@@ -65,14 +63,12 @@ button {
 	font-weight: bold;
 	height: auto;
 	position: relative;
-	
 }
 
 button:hover {
 	background-color: #464c50;
 	transition: background-color 0.25s;
 	cursor: pointer;
-
 }
 
 .menuButton:hover {
@@ -107,7 +103,7 @@ button:active {
 	
 	display: block;
 	position: relative;
-	width: 90%;
+	width: 80%;
 	background-color: #131416 ;
 	justify-content: center;
 
@@ -191,21 +187,20 @@ button:active {
 }
 
 #profileContainer {
-	display: block;
+	display: table;
 	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+	align-items: center;
 	width: fit-content;
 	height: fit-content;
 }
 
 .profileButtons {
-	display: inline;
+	display: table-cell;
 	float: right;
 	vertical-align: middle;
-	margin-top:auto;
-	margin-bottom:auto;
 }
 
 #portrait {
@@ -289,5 +284,5 @@ button:active {
 .menuButton {
 	width: 8%;
 	border-bottom: 3px solid transparent;
-	padding-top: 1px;
+	padding-top: 13px;
 }
