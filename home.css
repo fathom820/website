@@ -220,6 +220,10 @@ button:active {
 		display: flex;
 	}
 
+	#siteContainer {
+		width: 100%;
+	}
+
 	/*
 	TEMPORARY UNTIL FIX MENU ICON WORKS
 	*/
